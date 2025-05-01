@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Hybrid Diffusion Planning</title>
+
+    <meta name="description" content="Hybrid Diffusion Planning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+     <!--FACEBOOK-->
+     <meta property="og:image" content="./img/share_image.png">
+     <meta property="og:image:type" content="image/png">
+     <meta property="og:image:width" content="1196">
+     <meta property="og:image:height" content="705">
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://hybrid-diffusion-planning.github.io/"/>
+     <meta property="og:title" content="Hybrid Diffusion Planning" />
+     <meta property="og:description"
+         content="Project page for Hybrid Diffusion Planning." />
+ 
+     <!--TWITTER-->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="Hybrid Diffusion Planning" />
+     <meta name="twitter:description"
+         content="Project page for Hybrid Diffusion Planning" />
+     <meta name="twitter:image" content="./img/share_image.png" />
+
+     
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+
+	
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JBS73F70V"></script> -->
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5JBS73F70V');
+</script> -->
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <h2 class="col-md-12 text-center">
+                <b><font size="+6">Hybrid Diffusion Planning</font></b></br> 
+            </h2>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-10 col-lg-8 mx-auto">
+                <h3 class="mt-4 mb-2">Abstract</h3>
+                <p class="text-justify">
+                    Constructing robots to accomplish long-horizon tasks is a long-standing challenge within artificial intelligence. Approaches using generative methods, particularly Diffusion Models, have gained attention due to their ability to model continuous robotic trajectories for planning and control. However, we show that these models struggle with long-horizon tasks that involve complex decision-making and, in general, are prone to confusing different modes of behavior, leading to failure. To remedy this, we propose to augment continuous trajectory generation by simultaneously generating a high-level symbolic plan. We show that this requires a novel mix of discrete variable diffusion and continuous diffusion, which dramatically outperforms the baselines. In addition, we illustrate how this hybrid diffusion process enables flexible trajectory synthesis, allowing us to condition synthesized actions on partial and complete discrete conditions.
+                </p>
+                <div class="text-center mt-4">
+                    <img src="img/Teaser.png" alt="Teaser" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
