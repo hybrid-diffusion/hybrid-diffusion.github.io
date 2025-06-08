@@ -130,15 +130,41 @@
         <div class="row mt-4">
             <div class="col-md-10 col-lg-8 mx-auto">
                 <h3 class="mb-3">Simulated tasks</h3>
+                <!-- Videos -->
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4 text-center">
+                        <video class="w-100 mb-3" controls>
+                            <source src="videos/hybrid_xarm_sorting_compressed.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h5 class="mt-2">X-Arm Sorting</h5>
+                    </div>
+                    <div class="col-md-4 mb-4 text-center">
+                        <video class="w-100 mb-3" controls>
+                            <source src="videos/hybrid_xarm_pick_place_compressed.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h5 class="mt-2">Arrange Blocks</h5>
+                    </div>
+                    <div class="col-md-4 mb-4 text-center">
+                        <video id="hook-video" class="w-100 mb-3" controls>
+                            <source src="videos/hook_rollout.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h5 class="mt-2">Hook Task</h5>
+                    </div>
+                </div>
+
+                <!-- Table -->
                 <div class="row align-items-start">
-                    <!-- Table -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-9 mx-auto mb-4">
                         <table class="table booktabs-table text-center align-middle mb-0">
                             <thead>
                                 <tr>
                                     <th>Method</th>
                                     <th>X-Arm<br>Sorting</th>
                                     <th>Arrange<br>Blocks</th>
+                                    <th>Hook<br>Task</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -146,38 +172,28 @@
                                     <td>Diffuser</td>
                                     <td>46%</td>
                                     <td>67%</td>
+                                    <td>38%</td>
                                 </tr>
                                 <tr>
                                     <td>Joint Diffuser</td>
                                     <td>41%</td>
                                     <td>61%</td>
+                                    <td>48%</td>
                                 </tr>
                                 <tr>
                                     <td>Separate Diffuser</td>
                                     <td>38%</td>
                                     <td>62%</td>
+                                    <td>43%</td>
                                 </tr>
                                 <tr>
                                     <td><b>Hybrid (Ours)</b></td>
                                     <td><b>83%</b></td>
                                     <td><b>74%</b></td>
+                                    <td><b>60%</b></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                
-                    <!-- Videos -->
-                    <div class="col-md-4 mb-4 text-center">
-                        <video class="w-100 mb-3" controls>
-                            <source src="videos/hybrid_xarm_sorting_compressed.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col-md-4 mb-4 text-center">
-                        <video class="w-100 mb-3" controls>
-                            <source src="videos/hybrid_xarm_pick_place_compressed.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
                     </div>
                 </div>
             </div>
@@ -242,5 +258,11 @@
         </div>
     </div>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('hook-video').playbackRate = 0.5;
+        document.getElementById('hook-video').addEventListener('loadedmetadata', function() {
+            this.playbackRate = 0.5;
+        });
+    </script>
 </body>
 </html>
