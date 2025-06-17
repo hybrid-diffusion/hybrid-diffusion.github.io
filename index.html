@@ -246,12 +246,59 @@
         <div class="row mt-4">
             <div class="col-md-10 col-lg-8 mx-auto">
                 <h3 class="mb-3">Real-world Evaluation</h3>
-                <div class="text-center">
-                    <div class="ratio ratio-16x9">
-                        <video controls>
-                            <source src="videos/real_sorting_compressed.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                <div class="row mt-4">
+                    <div class="col-md-6 text-center mb-4">
+                        <div class="ratio ratio-16x9">
+                            <video controls>
+                                <source src="videos/real_sorting_compressed.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h5 class="mt-2">Real Sorting Task</h5>
+                    </div>
+                    <div class="col-md-6 text-center mb-4">
+                        <div class="ratio ratio-16x9">
+                            <video controls>
+                                <source src="videos/Real_hook_hybrid_compressed.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h5 class="mt-2">Real Hook Task</h5>
+                    </div>
+                </div>
+                <div class="row align-items-start mt-4">
+                    <div class="col-md-9 mx-auto mb-4">
+                        <table class="table booktabs-table text-center align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Sorting Task</th>
+                                    <th>Hook Task</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Diffuser</td>
+                                    <td>20%</td>
+                                    <td>6.7%</td>
+                                </tr>
+                                <tr>
+                                    <td>Joint Diffuser</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Separate Diffuser</td>
+                                    <td>0%</td>
+                                    <td>6.7%</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Hybrid (Ours)</b></td>
+                                    <td><b>70%</b></td>
+                                    <td><b>60%</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
